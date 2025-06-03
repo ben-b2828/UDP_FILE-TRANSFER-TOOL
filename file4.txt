@@ -1,0 +1,7 @@
+style = ttk.Style()
+        style.theme_use('clam')
+        style.configure("Frame", background="blue")
+        style.configure("Label", background="blue", font=("Segoe UI", 11))
+        style.configure("Button", font=("times new roman ui", 10, "bold"), padding=5)
+        style.configure("Labelframe", background="green", font=("times new roman ui", 11, "light"))
+        style.configure("Labelframe.Label", font=("times new roman UI", 12, "light"))
