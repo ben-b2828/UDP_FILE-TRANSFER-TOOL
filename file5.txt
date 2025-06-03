@@ -1,0 +1,3 @@
+ self.create_sender_frame()
+ self.create_receiver_frame()
+ self.create_log_area()
