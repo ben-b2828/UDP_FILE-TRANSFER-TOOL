@@ -1,0 +1,3 @@
+    def create_sender_frame(self):
+        sender_frame = ttk.LabelFrame(self.root, text="📤 Sender", padding=15)
+        sender_frame.pack(padx=20, pady=10, fill="x")
