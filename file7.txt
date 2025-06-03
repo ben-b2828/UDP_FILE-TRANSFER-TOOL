@@ -1,0 +1,4 @@
+  ttk.Label(sender_frame, text="File:").grid(row=0, column=0, sticky="e", pady=5)
+        self.file_path_var = tk.StringVar()
+        ttk.Entry(sender_frame, textvariable=self.file_path_var, width=60).grid(row=0, column=1, padx=5, pady=5)
+        ttk.Button(sender_frame, text="📁 Browse", command=self.browse_file).grid(row=0, column=2, padx=5)
