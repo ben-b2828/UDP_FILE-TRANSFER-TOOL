@@ -1,0 +1,4 @@
+CHUNK_SIZE = 6000 
+DEFAULT_RECEIVED_DIR = "received_files"  
+if not os.path.exists(DEFAULT_RECEIVED_DIR):
+    os.makedirs(DEFAULT_RECEIVED_DIR)
