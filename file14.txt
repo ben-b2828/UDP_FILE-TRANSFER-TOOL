@@ -1,0 +1,3 @@
+    def create_log_area(self):
+        log_frame = ttk.LabelFrame(self.root, text="📝 Transfer Logs", padding=10)
+        log_frame.pack(padx=20, pady=10, fill="both", expand=True)
