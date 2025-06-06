@@ -1,0 +1,2 @@
+ttk.Button(receiver_frame, text="🟢 Start Listening", command=self.start_receiving_default).grid(row=0, column=2, padx=10)
+        ttk.Button(receiver_frame, text="📥 Receive File Now", command=self.start_receiving_manual).grid(row=0, column=3, padx=10)
