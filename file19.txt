@@ -1,0 +1,10 @@
+ with open(file_path, "rb") as f:
+                while chunk := f.read(CHUNK_SIZE):
+                    sock.sendto(chunk, (ip_resolved, receiver_port))
+                    time.sleep(2) 
+            
+            sock.sendto(b"__END__", (ip_resolved, receiver_port))
+            self.log_message(f"[SUCCESS] File '{file_name}' sent successfully.")
+
+        except Exception as e:
+            self.log_message(f"[ERROR] File send failed: {str(e)}")
