@@ -1,0 +1,4 @@
+    def log_message(self, msg):
+        timestamp = time.strftime("[%H:%M:%S]", time.localtime())
+        self.log.insert(tk.END, f"{timestamp} {msg}\n")
+        self.log.see(tk.END)
