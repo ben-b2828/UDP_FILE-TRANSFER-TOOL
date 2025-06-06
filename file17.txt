@@ -1,0 +1,4 @@
+    def browse_file(self):
+        file_path = filedialog.askopenfilename(title="Select a file to send")
+        if file_path:
+            self.file_path_var.set(file_path)
