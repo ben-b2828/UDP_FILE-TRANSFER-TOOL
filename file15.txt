@@ -1,0 +1,2 @@
+self.log = scrolledtext.ScrolledText(log_frame, height=15, font=("Consolas", 11), bg="gray", fg="white")
+        self.log.pack(fill="both", expand=True)
