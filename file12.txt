@@ -1,0 +1,3 @@
+ ttk.Label(receiver_frame, text="Listen Port:").grid(row=0, column=0, padx=5)
+        self.listen_port_var = tk.StringVar()
+        ttk.Entry(receiver_frame, textvariable=self.listen_port_var, width=10).grid(row=0, column=1)
