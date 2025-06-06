@@ -1,0 +1,21 @@
+ def send_file(self):
+        try:
+            file_path = self.file_path_var.get()
+            receiver_ip = self.receiver_ip_var.get()
+            receiver_port = int(self.receiver_port_var.get())
+
+            
+            if not os.path.exists(file_path):
+                raise FileNotFoundError("Selected file does not exist.")
+
+           
+            ip_resolved = socket.gethostbyname(receiver_ip)
+            self.log_message(f"[INFO] Resolved IP Address: {ip_resolved}")
+
+          
+            file_name = os.path.basename(file_path)
+            sock = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
+
+           
+            sock.sendto(f"FILENAME:{file_name}".encode(), (ip_resolved, receiver_port))
+            time.sleep(2)
